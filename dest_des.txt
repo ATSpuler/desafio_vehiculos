@@ -3,7 +3,7 @@ modelo
 		campos
 		tipos de datos
 		
-	otras opciones
+	otras opciones de
 	Entidad en la base de datos
 
 Define 

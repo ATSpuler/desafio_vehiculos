@@ -14,7 +14,7 @@ class Chofer(models.Model):
     creacion_registro = models.DateField()
     vehiculo = models.OneToOneField('Vehiculo', on_delete=models.CASCADE, related_name='chofer')
 
-class RegCont(models.Model):
+class Registro_Contabilidad(models.Model):
     fecha_compra = models.DateField()
     valor = models.FloatField()
     vehiculo = models.OneToOneField('Vehiculo', on_delete=models.CASCADE, related_name='reg_cont')

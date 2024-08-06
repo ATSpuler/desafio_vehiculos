@@ -15,7 +15,7 @@ CREATE TABLE Chofer_tb (
   FOREIGN KEY (vehiculo_id) REFERENCES Vehiculo_tb(patente)
 );
 
-CREATE TABLE Reg_Cont_tb (
+CREATE TABLE Registro_Contabilidad_tb (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   fecha_compra DATE NOT NULL,
   valor FLOAT NOT NULL,
