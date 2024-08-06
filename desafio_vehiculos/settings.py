@@ -83,8 +83,8 @@ WSGI_APPLICATION = 'desafio_vehiculos.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'desafio_2_db',
-        'USER': 'al',
+        'NAME': 'star_logistics',
+        'USER': 'admin',
         'PASSWORD': '',
         'HOST': '127.0.0.1',
         'PORT': '5432',
