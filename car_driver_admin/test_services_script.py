@@ -1,5 +1,5 @@
-from models import *
-from services import *
+from car_driver_admin.models import *
+from car_driver_admin.services import *
 
 # Create vehiculos
 print("Creating vehiculos...")

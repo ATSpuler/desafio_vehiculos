@@ -1,4 +1,4 @@
-from models import *
+from car_driver_admin.models import *
 from django.core.exceptions import ValidationError
 
 def crear_vehiculo(patente, marca, modelo, year):

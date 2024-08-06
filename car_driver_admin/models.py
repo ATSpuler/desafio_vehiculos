@@ -7,7 +7,7 @@ class Vehiculo(models.Model):
     year = models.IntegerField()
 
 class Chofer(models.Model):
-    rut = models.CharField(max_length=9, primary_key=True)
+    rut = models.CharField(max_length=10, primary_key=True)
     nombre = models.CharField(max_length=50)
     apellido = models.CharField(max_length=50)
     activo = models.BooleanField(default=False)
