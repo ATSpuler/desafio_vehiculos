@@ -1,0 +1,65 @@
+modelo
+	entidad sin relaciones
+		campos
+		tipos de datos
+		
+	otras opciones
+	Entidad en la base de datos
+
+Define 
+	modelo
+		entidades
+			relaciones muchos a uno
+
+Modelar sistema
+	relacionar modelos
+		crear operaciones
+
+operar los datos de la base de datos
+
+vehiculos_reparto
+	que se asigna a 
+	chofer 
+	registro unico
+
+funciones de servicios:
+
+crear_vehiculo
+
+crear_chofer
+
+crear_registro_contable
+
+deshabilitar_chofer
+
+deshabilitar_vehiculo
+
+habilitar_chofer
+
+habilitar_vehiculo
+
+obtener_vehiculo
+
+obtener_chofer
+
+asignar_chofer_a_vehiculo
+
+imprimir_datos_vehiculos
+
+
+
+Requerimientos
+1. Creacion de los modelos con sus relaciones 4p
+2. Creacion de los servicios solicitados 4p
+3. Capturas de pantalla mostrando la ejecucion y salidas de los servicios 2p
+
+
+
+
+
+
+
+
+
+
+
