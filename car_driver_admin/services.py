@@ -1,5 +1,6 @@
 from car_driver_admin.models import *
 from django.core.exceptions import ValidationError
+from datetime import date
 
 def crear_vehiculo(patente, marca, modelo, year):
     if len(patente)!= 6:
@@ -140,7 +141,7 @@ def obtener_chofer(rut):
 
 def asignar_chofer_a_vehiculo(rut, patente):
     if len(rut)!= 10:
-        raise ValidationError("Rut debe tener 9 caracteres")
+        raise ValidationError("Rut debe tener 10 caracteres")
     if len(patente)!= 6:
         raise ValidationError("Patente debe tener 6 caracteres")
     try:
@@ -154,7 +155,8 @@ def asignar_chofer_a_vehiculo(rut, patente):
 
     chofer.vehiculo = vehiculo
     chofer.save()
-    return chofer
+    return f"Vehiculo {patente} asignado a chofer {rut}"
+
 
 # def asignar_chofer_a_vehiculo(rut, patente):
 #     if len(rut)!= 10:

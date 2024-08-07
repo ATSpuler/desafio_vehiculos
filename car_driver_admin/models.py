@@ -1,4 +1,5 @@
 from django.db import models
+from datetime import date
 
 class Vehiculo(models.Model):
     patente = models.CharField(max_length=6, primary_key=True)
@@ -11,7 +12,7 @@ class Chofer(models.Model):
     nombre = models.CharField(max_length=50)
     apellido = models.CharField(max_length=50)
     activo = models.BooleanField(default=False)
-    creacion_registro = models.DateField()
+    creacion_registro = models.DateField(auto_now_add=True)
     vehiculo = models.OneToOneField('Vehiculo', on_delete=models.CASCADE, related_name='chofer')
 
 class Registro_Contabilidad(models.Model):

@@ -8,8 +8,8 @@ vehiculo2 = crear_vehiculo("DEF456", "Honda", "Civic", 2018)
 
 # Create choferes
 print("Creating choferes...")
-chofer1 = crear_chofer("12345678-9", "Juan", "Perez", True)
-chofer2 = crear_chofer("98765432-1", "Maria", "Gonzalez", True)
+chofer1 = crear_chofer("12345678-9", "Juan", "Perez", True, vehiculo_id="ABC123")
+chofer2 = crear_chofer("98765432-1", "Maria", "Gonzalez", True, vehiculo_id="DEF456")
 
 # Asignar chofer a vehiculo
 print("Asignando chofer a vehiculo...")

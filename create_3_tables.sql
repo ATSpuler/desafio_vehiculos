@@ -6,7 +6,7 @@ CREATE TABLE Vehiculo_tb (
 );
 
 CREATE TABLE Chofer_tb (
-  rut CHAR(9) PRIMARY KEY,
+  rut CHAR(10) PRIMARY KEY,
   nombre CHAR(50) NOT NULL,
   apellido CHAR(50) NOT NULL,
   activo BOOLEAN DEFAULT FALSE,
@@ -16,7 +16,7 @@ CREATE TABLE Chofer_tb (
 );
 
 CREATE TABLE Registro_Contabilidad_tb (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  id INTEGER PRIMARY KEY,
   fecha_compra DATE NOT NULL,
   valor FLOAT NOT NULL,
   vehiculo_id CHAR(6) NOT NULL UNIQUE,
