@@ -15,7 +15,7 @@ def crear_vehiculo(patente, marca, modelo, year):
 
 
 def crear_chofer(rut, nombre, apellido, activo=False, creacion_registro=None, vehiculo_id=None):
-    if len(rut)!= 9:
+    if len(rut)!= 10:
         raise ValidationError("Rut debe tener 9 caracteres")
     if len(nombre) > 50 or len(apellido) > 50:
         raise ValidationError("Nombre y apellido deben tener max 50 caracteres")
@@ -48,7 +48,7 @@ def crear_registro_contable(fecha_compra, valor, vehiculo_id):
 
 
 def deshabilitar_chofer(rut):
-    if len(rut)!= 9:
+    if len(rut)!= 10:
         raise ValidationError("Rut debe tener 9 caracteres")
     try:
         chofer = Chofer.objects.get(rut=rut)
@@ -75,7 +75,7 @@ def deshabilitar_vehiculo(patente):
     return vehiculo
 
 def habilitar_chofer(rut):
-    if len(rut)!= 9:
+    if len(rut)!= 10:
         raise ValidationError("Rut debe tener 9 caracteres")
     try:
         chofer = Chofer.objects.get(rut=rut)
@@ -120,7 +120,7 @@ def obtener_vehiculo(patente):
 #         return None
 
 def obtener_chofer(rut):
-    if len(rut)!= 9:
+    if len(rut)!= 10:
         raise ValidationError("Rut debe tener 9 caracteres")
     try:
         chofer = Chofer.objects.get(rut=rut)
@@ -130,7 +130,7 @@ def obtener_chofer(rut):
     return chofer
 
 # def obtener_chofer(rut):
-#     if len(rut)!= 9:
+#     if len(rut)!= 10:
 #         raise ValidationError("Rut debe tener 9 caracteres")
 #     try:
 #         return Chofer.objects.get(rut=rut)
@@ -139,7 +139,7 @@ def obtener_chofer(rut):
 
 
 def asignar_chofer_a_vehiculo(rut, patente):
-    if len(rut)!= 9:
+    if len(rut)!= 10:
         raise ValidationError("Rut debe tener 9 caracteres")
     if len(patente)!= 6:
         raise ValidationError("Patente debe tener 6 caracteres")
@@ -157,7 +157,7 @@ def asignar_chofer_a_vehiculo(rut, patente):
     return chofer
 
 # def asignar_chofer_a_vehiculo(rut, patente):
-#     if len(rut)!= 9:
+#     if len(rut)!= 10:
 #         raise ValidationError("Rut debe tener 9 caracteres")
 #     if len(patente)!= 6:
 #         raise ValidationError("Patente debe tener 6 caracteres")
